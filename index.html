@@ -4,6 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Assignment 3</title>
+    <!-- csslink -->
+     <link rel="stylesheet" href="styles/styles.css">
     <!-- tailwind + daisyui -->
     <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.10/dist/full.min.css" rel="stylesheet" type="text/css" />
     <script src="https://cdn.tailwindcss.com"></script>
@@ -18,6 +20,7 @@
                 'text1':'#212121',
                 'text2':'#1C1C1C',
                 'p1':'#494949',
+                'formcolor':'#A0A0A0',
               }
             }
           }
@@ -38,7 +41,7 @@
         }
     </style>
 </head>
-<body class="font-manrope">
+<body class="font-manrope bg-white">
     <header class="bg-gradient-to-r from-[#FFFFFF] to-[#ffffff] ..." >
         <!-- navbar -->
         <nav class=" w-4/5 mx-auto flex items-center justify-between md:py-10 py-6">
@@ -82,7 +85,11 @@
     </header>
     <main>
         <!-- about us sec -->
-        <section class="bg-bg1 py-20">
+        <section class="bg-bg1 md:pt-10 pb-20 pt-20">
+            <!-- vector arrow -->
+            <div class="hidden md:block ml-28 mb-3">
+                <img src="./assets/Vector.png" alt="">
+             </div>
             <!-- main div -->
             <div class="bg-bg1 w-4/5 mx-auto flex md:flex-row flex-col md:gap-5">
                 <!-- left -->
@@ -127,7 +134,7 @@
             </div>
         </section>
         <!-- how we works sec -->
-         <section class="bg-bg1 py-20">
+         <section class="bg-bg1 pb-20">
             <div class="bg-bg1 w-4/5 mx-auto">
                 <!-- top btn+text -->
                 <div class="flex flex-col items-center gap-4">
@@ -167,6 +174,40 @@
              <div>
     
          </section>
+         <!-- out latest portfolio sec -->
+          <!-- <section>
+          </section> -->
+          <!-- contact sec -->
+           <section class="contact m-1">
+            <div class="w-4/5 mx-auto md:py-20 py-8">
+                <!-- top btn+text -->
+                <div class="flex flex-col items-center gap-4">
+                    <!-- btn -->
+                    <div>
+                        <button class="text-p1 font-bold w-[166px] bg-[#adf55b71] px-4 py-2   rounded-full"><i class="fa-solid fa-arrow-right text-p1 mr-2"></i>Let's Connect</button>
+                    </div>
+                    <!-- text -->
+                    <div class="md:w-[60%] w-full text-center space-y-6">
+                        <h3 class="text-text1 font-bold md:text-[40px] text-2xl">Let's Discuss Next Project</h3>
+                        <p class="text-p1 font-medium md:text-base text-[14px]">The barn house captivates with its blend of rustic charm and modern sophistication, featuring weathered wood, sleek metal accents.</p>
+                    </div>
+                </div>
+                <!-- form -->
+                 <div class="md:w-4/5 md:mx-auto md:mt-10 mt-6">
+                    <form class="grid md:grid-cols-2 md:grid-row-3 grid-cols-1 md:gap-6 gap-5">
+                        <input type="text" name="name" id="" class="bg-white rounded-3xl text-formcolor font-medium px-5 py-4 " placeholder="First Name*">
+                        <input type="text" name="name" id="" class="bg-white rounded-3xl text-formcolor font-medium px-5 py-4 " placeholder="Last Name*">
+                        <input type="number" name="number" id="" class="bg-white rounded-3xl text-formcolor font-medium px-5 py-4 " placeholder="Phone Number*">
+                        <input type="email" name="email" id="" class="bg-white rounded-3xl text-formcolor font-medium px-5 py-4 " placeholder="Email Address*">
+                        <textarea name="comment" id="" class="bg-white rounded-3xl text-formcolor font-medium px-5 py-4 h-[240px] md:col-span-2 " placeholder="Write your message here"></textarea>
+                    </form>
+                    <div class="mt-8">
+                        <button type="submit" class="text-[20px] font-extrabold text-black flex items-center gap-2 bg-color1 w-full py-3 justify-center rounded-full">Send Mail <i class="fa-solid fa-arrow-right text-2xl text-white -rotate-45 bg-[#1C1C1C] rounded-full h-8 w-8"></i>
+                        </button>
+                    </div>
+                 </div>
+            </div>
+           </section>
     </main>
     <footer class="bg-text2">
         <nav class=" w-4/5 mx-auto  flex-col md:py-16 py-10 justify-center">
